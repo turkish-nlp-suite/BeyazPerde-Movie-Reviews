@@ -1,6 +1,6 @@
 # BeyazPerde-Movie-Reviews
 
-Beyazperde Movie Reviews offers Turkish sentiment analysis datasets that is scraped from popular movie reviews website Beyazprede.com. Currently there are 2 datasets, Top 300 Movies Dataset and All Movies Dataset. 
+Beyazperde Movie Reviews offers Turkish sentiment analysis datasets that is scraped from popular movie reviews website Beyazperde.com. Currently there are 2 datasets, Top 300 Movies Dataset and All Movies Dataset. 
 Both datasets are presented in JSON format, each instance of the dataset is a JSON consisting of 
 
 - movie URL
