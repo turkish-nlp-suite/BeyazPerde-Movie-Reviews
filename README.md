@@ -1,49 +1,7 @@
 # BeyazPerde-Movie-Reviews
 
 Beyazperde Movie Reviews offers Turkish sentiment analysis datasets that is scraped from popular movie reviews website Beyazprede.com. Currently there are 2 datasets, Top 300 Movies Dataset and All Movies Dataset. 
-
-## Top 300 Movies
-
-Top 300 Movies include reviews about best 300 movies of all the time. Here's the star rating distribution:
-
-| star rating | count |
-|---|---|
-| 0.5  | 1.657 |
-| 1.0  | 535 |
-| 1.5  | 273 |
-| 2.0  | 608 |
-| 2.5  | 2.439 |
-| 3.0  |2.277 |
-| 3.5  | 5.550 |
-| 4.0  | 13.248 |
-| 4.5  | 10.077 |
-| 5.0  | 17.351 |
-| total | 54.015 |
-
-As one sees, this dataset is highly unbalanced, number of 4 and 5 star ratings are much higher than 0, 1, 2 and 3 star reviews. This dataset offers the challenge of understanding the sentiment in a refined way, dissecting the positive sentiment into "very positive" or "okayish positive".
-
-## All Movies Dataset
-
-This dataset contains reviews about 4500 popular movies of all times. Here's the star rating distribution for this dataset:
-
- 
-| star rating | count |
-|---|---|
-| 0.5  | 3.635 |
-| 1.0  | 2.325 |
-| 1.5  | 1.077 |
-| 2.0  | 1.902 |
-| 2.5  | 4.767 |
-| 3.0  |4.347 |
-| 3.5  | 6.495 |
-| 4.0  |9.486 |
-| 4.5  | 3.652 |
-| 5.0  | 7.594 |
-| total | 45280 |
-
---------------------------------------
-
-Each instance of the dataset is a JSON consisting of 
+Both datasets are presented in JSON format, each instance of the dataset is a JSON consisting of 
 
 - movie URL
 - movie name
@@ -56,7 +14,7 @@ Each instance of the dataset is a JSON consisting of
 - rating info
 - a list of reviews, each element of the list is a review and a rating value in 0-5 scala.
 
-Here's an example JSOn for you:
+Here's an example JSON for you:
 
 ```
   {
@@ -92,8 +50,47 @@ Here's an example JSOn for you:
   }
 ```
 
+## Top 300 Movies
+
+Top 300 Movies include audience reviews about best 300 movies of all the time. Here's the star rating distribution:
+
+| star rating | count |
+|---|---|
+| 0.5  | 1.657 |
+| 1.0  | 535 |
+| 1.5  | 273 |
+| 2.0  | 608 |
+| 2.5  | 2.439 |
+| 3.0  |2.277 |
+| 3.5  | 5.550 |
+| 4.0  | 13.248 |
+| 4.5  | 10.077 |
+| 5.0  | 17.351 |
+| total | 54.015 |
+
+As one sees, this dataset is highly unbalanced, number of 4 and 5 star ratings are much higher than 0, 1, 2 and 3 star reviews. This dataset offers the challenge of understanding the sentiment in a refined way, dissecting the positive sentiment into "very positive" or "okayish positive".
+
+## All Movies Dataset
+
+This dataset contains audience reviews about 4500 popular movies of all times. Here's the star rating distribution for this dataset:
+
+ 
+| star rating | count |
+|---|---|
+| 0.5  | 3.635 |
+| 1.0  | 2.325 |
+| 1.5  | 1.077 |
+| 2.0  | 1.902 |
+| 2.5  | 4.767 |
+| 3.0  |4.347 |
+| 3.5  | 6.495 |
+| 4.0  |9.486 |
+| 4.5  | 3.652 |
+| 5.0  | 7.594 |
+| total | 45280 |
 
 
+--------------------------------------
 This work is supported by Google Developer Experts Program. Part of Duygu 2023 Fall-Winter collection, "Turkish NLP with Duygu"/ "Duygu'yla Türkçe NLP". All rights reserved.
 
 Shield: [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
